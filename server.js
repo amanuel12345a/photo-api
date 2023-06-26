@@ -7,7 +7,7 @@ const {testmony} = require('./control/schema')
 const { images } = require('./control/Images')
 require("dotenv").config()
 app.use(cors({
-  credentials:true,   
+  origin: '*'
 }))
 app.use(express.json({limit: '50mb'}));
 app.use(express.urlencoded({limit: '50mb'}));
